@@ -6,17 +6,18 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 11:59:42 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 12:27:36 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 16:05:19 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBT_H
+# define LIBFT_H
 
 # include <stdio.h>
 # include <stddef.h>
 # include <ctype.h>
 # include <string.h>
+# include <bsd/string.h>
 
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
