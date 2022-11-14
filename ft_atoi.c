@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
+/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:38:02 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/10 13:42:26 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 11:43:59 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_atoi(const char *nptr)
 	return (sign * number);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 int atoi( const char * theString );
 
 int main(int argc, char **argv)
@@ -50,4 +50,4 @@ int main(int argc, char **argv)
 		printf("%d\n", ft_atoi(argv[1]));
 	}
 	return (0);
-}
+}*/

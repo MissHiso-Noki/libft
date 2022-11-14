@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
+/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:46:59 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/10 15:29:33 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 11:51:13 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main () {
@@ -49,4 +49,4 @@ int main () {
    printf("String after |%c| is - |%s|\n", ch, ret);
 
    return(0);
-}
+}*/

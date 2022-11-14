@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
+/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:59:23 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/10 17:05:08 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 11:50:40 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		i = (int)len - 1;
 		while (i >= 0)
 		{
-			*(char*)(dst + i) = *(char*)(src + i);
+			*(char *)(dst + i) = *(char *)(src + i);
 			i--;
 		}
 	}
@@ -32,14 +32,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		i = 0;
 		while (i < (int)len)
 		{
-			*(char*)(dst + i) = *(char*)(src + i);
+			*(char *)(dst + i) = *(char *)(src + i);
 			i++;
 		}
 	}
 	return (dst);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main () {
@@ -51,4 +51,4 @@ int main () {
    printf("After memmove dest = %s, src = %s\n", dest, src);
 
    return(0);
-}
+}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
+/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:21:01 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/10 15:29:04 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 11:50:04 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	while (i < n)
 	{
-		*(char*)(dest + i) = *(char*)(src + i);
+		*(char *)(dest + i) = *(char *)(src + i);
 		i++;
 	}
 	return (dest);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main () {
@@ -41,4 +41,4 @@ int main () {
    printf("After memcpy dest = %s\n", dest);
 
    return(0);
-}
+}*/

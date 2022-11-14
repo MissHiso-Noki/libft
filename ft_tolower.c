@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
+/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:18:15 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/10 16:21:51 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 11:55:15 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <ctype.h>
 
 int main()
@@ -27,4 +27,4 @@ int main()
 	printf("%d\n", tolower('B'));
 	printf("%d\n", ft_tolower('B'));
 	return (0);
-}
+}*/
