@@ -6,11 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:21:39 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:50:56 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:34:10 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -30,9 +30,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-/*#include <stdio.h>
-#include <string.h>
-
+/*
 int main () {
    char str[50];
 

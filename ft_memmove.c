@@ -6,11 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:59:23 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:50:40 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:33:59 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -39,9 +39,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-/*#include <stdio.h>
-#include <string.h>
-
+/*
 int main () {
    char dest[] = "oldstring";
    const char src[]  = "newstring";

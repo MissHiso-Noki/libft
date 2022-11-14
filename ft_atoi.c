@@ -6,9 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:38:02 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:43:59 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:35:47 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -39,9 +41,7 @@ int	ft_atoi(const char *nptr)
 	return (sign * number);
 }
 
-/*#include <stdio.h>
-int atoi( const char * theString );
-
+/*
 int main(int argc, char **argv)
 {
 	if (argc == 2)

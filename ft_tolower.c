@@ -6,9 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:18:15 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:55:15 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:35:20 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -19,9 +21,7 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-/*#include <stdio.h>
-#include <ctype.h>
-
+/*
 int main()
 {
 	printf("%d\n", tolower('B'));

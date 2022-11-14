@@ -6,11 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:42:36 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:51:57 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:34:42 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 
@@ -25,9 +25,7 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-/*#include <stdio.h>
-#include <string.h>
-
+/*
 int main () {
    char str[50];
    int len;

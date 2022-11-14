@@ -6,9 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 12:57:02 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:46:25 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:32:44 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -19,11 +21,7 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-/*#include <ctype.h>
-#include <stdio.h>
-
-int	ft_isascii(int c);
-
+/*
 int main()
 {
 		printf("%d\n", isascii('网'));

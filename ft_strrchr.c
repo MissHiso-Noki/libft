@@ -6,11 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 16:56:32 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:53:43 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:35:02 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -32,9 +32,7 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
-/*#include <stdio.h>
-#include <string.h>
-
+/*
 int main () {
    const char str[] = "http://www.tutorialspoint.com";
    const char ch = '.';

@@ -6,11 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:54:20 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:44:24 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:29:32 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

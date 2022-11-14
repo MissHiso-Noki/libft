@@ -6,11 +6,11 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:11:29 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 11:53:25 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/14 12:34:54 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	ft_strnstr(const char *big, const char *little, size_t len)
 {
