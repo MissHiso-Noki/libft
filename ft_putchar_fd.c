@@ -6,8 +6,19 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:48:54 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 16:48:58 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/15 15:18:24 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
+
+// int main()
+// {
+// 	ft_putchar_fd('a', 1);
+// 	return (0);
+// }

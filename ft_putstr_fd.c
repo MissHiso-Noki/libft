@@ -6,8 +6,26 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:49:32 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 16:49:34 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/15 15:28:22 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
+}
+
+// int main()
+// {
+// 	ft_putstr_fd("Je suis Chloe", 1);
+// 	return (0);
+// }

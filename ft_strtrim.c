@@ -6,8 +6,13 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:50:10 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 16:50:13 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/15 14:48:49 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+
+}

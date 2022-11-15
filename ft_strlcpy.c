@@ -6,7 +6,7 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:49:18 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 12:34:35 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/15 15:47:22 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	if (size != 0)
 	{
-		while (src[j] != '\0' && j < size - 1)
+		while (src[j] != '\0' && j < size)
 		{
 			dst[j] = src[j];
 			j++;
@@ -35,3 +35,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (i);
 }
+
+int main ()
+{
+	char	dest[100];
+	char 	*src;
+
+	src = "Je suis chelo";
+
+	printf("%ld\n", ft_strlcpy(dest, src, 4));
+	printf("%s\n", dest);
+ }
