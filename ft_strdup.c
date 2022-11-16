@@ -6,7 +6,7 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:07:48 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 16:26:04 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/16 17:05:04 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*strdup(const char *s)
 	unsigned int	i;
 
 	i = 0;
-	sizesrc = ft_srlen(s);
+	sizesrc = ft_strlen(s);
 	dest = malloc((sizesrc + 1) * sizeof(char));
 	while (i < sizesrc)
 	{
