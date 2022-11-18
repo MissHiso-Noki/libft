@@ -6,13 +6,13 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:50:10 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/16 16:48:14 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/18 10:58:53 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	checkstart(const char *s1, const char *set)
+static int	checkstart(const char *s1, const char *set)
 {
 	size_t	i;
 	size_t	len;
@@ -30,7 +30,7 @@ int	checkstart(const char *s1, const char *set)
 	return (i);
 }
 
-int	checkend(const char *s1, const char *set)
+static int	checkend(const char *s1, const char *set)
 {
 	size_t	i;
 	size_t	len;
@@ -69,7 +69,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	{
 		return (NULL);
 	}
-	ft_strlcpy(sfinal, s1 + start, end - start);
+	ft_strlcpy(sfinal, s1 + start, end - start + 1);
 	return (sfinal);
 }
 

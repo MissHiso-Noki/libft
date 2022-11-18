@@ -6,7 +6,7 @@
 #    By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 13:41:19 by ccoste            #+#    #+#              #
-#    Updated: 2022/11/16 17:05:35 by ccoste           ###   ########.fr        #
+#    Updated: 2022/11/18 11:40:13 by ccoste           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,12 @@ SRC=ft_atoi.c \
 	ft_isdigit.c \
 	ft_memset.c \
 	ft_strdup.c \
-	ft_strncmp.c
+	ft_strncmp.c \
+	ft_itoa.c \
+	ft_calloc.c \
+	ft_putnbr_fd.c \
+	ft_strnstr.c \
+	
 OBJ= $(SRC:.c=.o)
 
 all:

@@ -6,13 +6,13 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:07:48 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/16 17:05:04 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/17 12:03:39 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	unsigned int	sizesrc;
 	char			*dest;
