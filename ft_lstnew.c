@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/14 16:07:48 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/21 15:25:59 by ccoste           ###   ########.fr       */
+/*   Created: 2022/11/21 16:32:11 by ccoste            #+#    #+#             */
+/*   Updated: 2022/11/21 16:48:10 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+t_list	*ft_lstnew(void *content)
 {
-	unsigned int	sizesrc;
-	char			*dest;
-	unsigned int	i;
+	t_list	*new;
 
-	i = 0;
-	sizesrc = ft_strlen(s);
-	dest = malloc((sizesrc + 1) * sizeof(char));
-	if (!dest)
+	new = malloc(sizeof(t_list));
+	if (!new)
 	{
 		return (NULL);
 	}
-	while (i < sizesrc)
-	{
-		dest[i] = s[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }

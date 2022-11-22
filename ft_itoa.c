@@ -6,7 +6,7 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:48:32 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/18 14:59:08 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/21 15:30:33 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ char	*ft_itoa(int n)
 
 	len = itoa_length(n);
 	str = ft_getstr(len);
+	if (!str)
+		return (NULL);
 	if (n == 0)
 		str[0] = '0';
 	if (n < 0)
@@ -59,17 +61,15 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 		if (n == -2147483648)
 		{
-			str[len - 1] = '8';
+			str[(len--) - 1] = '8';
 			n = n / 10;
-			len--;
 		}
 		n = n * -1;
 	}
 	while (n != 0 && len >= 0)
 	{
-		str[len - 1] = n % 10 + '0';
+		str[(len--) - 1] = n % 10 + '0';
 		n = n / 10;
-		len--;
 	}
 	return (str);
 }

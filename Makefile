@@ -6,7 +6,7 @@
 #    By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 13:41:19 by ccoste            #+#    #+#              #
-#    Updated: 2022/11/18 15:58:47 by ccoste           ###   ########.fr        #
+#    Updated: 2022/11/21 16:46:33 by ccoste           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,8 +45,21 @@ SRC=ft_atoi.c \
 	ft_putnbr_fd.c \
 	ft_strnstr.c \
 	ft_striteri.c \
-	ft_strmapi.c
+	ft_strmapi.c \
+	ft_split.c
+
+BONUS=ft_lstadd_front.c \
+	ft_lstclear.c \
+	ft_lstdelone.c \
+	ft_lstiter.c \
+	ft_lstadd_back.c \
+	ft_lstlast.c \
+	ft_lstmap.c \
+	ft_lstnews.c \
+	ft_lstsize.c
+
 OBJ= $(SRC:.c=.o)
+BONUSOBJ= $(BONUS:.c=.o)
 
 all:
 	$(CC) $(CFLAGS) -c $(SRC) libft.h
@@ -66,3 +79,10 @@ fclean : clean
 
 re : fclean all
 
+bonus: $(BONUS_OBJS)
+		$(CC) $(CFLAGS) -c $(BONUS) libft.h
+		ar -rc libft.a $(BONUS_OBJS)
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)

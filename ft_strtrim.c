@@ -6,7 +6,7 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:50:10 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/18 10:58:53 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/21 12:00:10 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	start = checkstart(s1, set);
 	end = checkend(s1, set);
-	if (s1 == NULL)
+	if (s1 == NULL || set == NULL)
 	{
 		return (NULL);
 	}
-	if (set == NULL)
+	if ((end - start) < 0)
 	{
-		return (NULL);
+		sfinal = ft_calloc(sizeof(char), 1);
+		if (!sfinal)
+			return (NULL);
+		return (sfinal);
 	}
 	sfinal = malloc((end - start + 1) * sizeof(char));
 	if (sfinal == NULL)
