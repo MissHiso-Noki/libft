@@ -6,7 +6,7 @@
 /*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 13:48:41 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/23 11:41:55 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/23 16:41:16 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	i;
+	int	count;
 
-	i = 0;
-	while (lst != '\0')
+	count = 0;
+	while (lst != NULL)
 	{
 		lst = lst->next;
-		i++;
+		count++;
 	}
-	return (i);
+	return (count);
 }

@@ -6,7 +6,7 @@
 #    By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 13:41:19 by ccoste            #+#    #+#              #
-#    Updated: 2022/11/21 16:46:33 by ccoste           ###   ########.fr        #
+#    Updated: 2022/11/23 17:04:55 by ccoste           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,15 +48,15 @@ SRC=ft_atoi.c \
 	ft_strmapi.c \
 	ft_split.c
 
-BONUS=ft_lstadd_front.c \
-	ft_lstclear.c \
-	ft_lstdelone.c \
-	ft_lstiter.c \
-	ft_lstadd_back.c \
+BONUS=ft_lstnews.c \
+	ft_lstadd_front.c \
+	ft_lstsize.c \
 	ft_lstlast.c \
-	ft_lstmap.c \
-	ft_lstnews.c \
-	ft_lstsize.c
+	ft_lstadd_back.c \
+	ft_lstdelone.c \
+	ft_lstclear.c \
+	ft_lstiter.c \
+	ft_lstmap.c
 
 OBJ= $(SRC:.c=.o)
 BONUSOBJ= $(BONUS:.c=.o)

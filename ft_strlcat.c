@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
+/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:48:50 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/22 13:30:11 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/23 11:52:23 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	i = 0;
 	sizesrc = ft_strlen(src);
-	sizedest = ft_strlen(dst);
-	if (size == 0)
+	if (!dst && size == 0)
 	{
 		return (sizesrc);
 	}
+	sizedest = ft_strlen(dst);
 	if (size <= sizedest)
 	{
 		return (size + sizesrc);
