@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
+/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:38:02 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/22 14:55:01 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/23 11:41:37 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * number);
 }
-
 
 //int main(int argc, char **argv)
 //{
