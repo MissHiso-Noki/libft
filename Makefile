@@ -6,14 +6,17 @@
 #    By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 13:41:19 by ccoste            #+#    #+#              #
-#    Updated: 2022/11/23 17:04:55 by ccoste           ###   ########.fr        #
+#    Updated: 2022/11/23 18:37:05 by ccoste           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME=libft.a
-CC=gcc
-CFLAGS=-Wall -Wextra -Werror
-SRC=ft_atoi.c \
+NAME =libft.a
+
+CC = cc
+
+CFLAGS = -Wall -Wextra -Werror
+
+SRC = ft_atoi.c \
 	ft_isprint.c \
 	ft_putchar_fd.c \
 	ft_bzero.c \
@@ -48,7 +51,7 @@ SRC=ft_atoi.c \
 	ft_strmapi.c \
 	ft_split.c
 
-BONUS=ft_lstnews.c \
+SRC_BONUS = ft_lstnew.c \
 	ft_lstadd_front.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
@@ -59,30 +62,37 @@ BONUS=ft_lstnews.c \
 	ft_lstmap.c
 
 OBJ= $(SRC:.c=.o)
-BONUSOBJ= $(BONUS:.c=.o)
 
-all:
-	$(CC) $(CFLAGS) -c $(SRC) libft.h
-	ar -rc libft.a $(OBJ)
+BONUS_OBJ= $(SRC_BONUS:.c=.o)
 
-$(NAME) : $(OBJ)
-	$(CC) -o $(NAME) $^
+HEADER_DIR = .
+
+all: $(NAME)
 
 %.o : %.c
-	$(CC) -o $@ -c $^
+	$(CC) -c $(CFLAGS) $< -o $@ -I $(HEADER_DIR)
+
+$(NAME) : $(OBJ)
+		ar rc $(NAME) $(OBJ)
+		randlib $(NAME)
+
+bonus: $(OBJ) $(BONUS_OBJ)
+		ar rc $(NAME) $(OBJ) $(BONUS_OBJ)
+
 
 clean :
-	rm -rf *.o
+	rm -rf $(OBJ) $(BONUS_OBJ)
 
 fclean : clean
 	rm -rf $(NAME)
 
 re : fclean all
 
-bonus: $(BONUS_OBJS)
-		$(CC) $(CFLAGS) -c $(BONUS) libft.h
-		ar -rc libft.a $(BONUS_OBJS)
+
+# bonus: $(BONUSOBJ) $(NAME)
+# 		$(CC) $(CFLAGS) -c $(BONUS) libft.h
+# 		ar -rc libft.a $(BONUSOBJ)
 
 so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ)
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(SRC_BONUS)
+	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS_OBJ)
