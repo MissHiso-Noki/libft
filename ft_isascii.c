@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 12:57:02 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 12:32:44 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 14:55:40 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,9 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-/*
-int main()
-{
-		printf("%d\n", isascii('网'));
-		printf("%d\n", ft_isascii('网'));
-	return (0);
-}*/
+//int main()
+//{
+//		printf("%d\n", isascii('网'));
+//		printf("%d\n", ft_isascii('网'));
+//	return (0);
+//}

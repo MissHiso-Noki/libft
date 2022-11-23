@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:50:15 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/21 13:31:21 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:31:53 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (dest);
 }
 
-/*int main()
-{
+//int main()
+//{
 
-	printf("%s", ft_substr("Je suis Chloe", 4, 10));
-	return (0);
-}*/
+//	printf("%s", ft_substr("Je suis Chloe", 4, 10));
+//	return (0);
+//}

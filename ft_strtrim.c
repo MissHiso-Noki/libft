@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:50:10 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/21 12:00:10 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:31:41 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,8 +76,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (sfinal);
 }
 
-/*int main(void)
-{
-	printf("%s\n", ft_strtrim("pppchloepcosteppp", "p"));
-	return (0);
-}*/
+//int main(void)
+//{
+//	printf("%s\n", ft_strtrim("pppchloepcosteppp", "p"));
+//	return (0);
+//}

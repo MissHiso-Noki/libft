@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 10:35:33 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 12:32:51 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:27:38 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,9 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-/*
-int main()
-{
-		printf("%d\n", isdigit('a'));
-		printf("%d\n", ft_isdigit('a'));
-	return (0);
-}*/
+//int main()
+//{
+//		printf("%d\n", isdigit('a'));
+//		printf("%d\n", ft_isdigit('a'));
+//	return (0);
+//}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 10:42:55 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 12:35:55 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:26:45 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-/*
-int main()
-{
-		printf("%d\n", isalnum('-'));
-		printf("%d\n", ft_isalnum('-'));
-	return (0);
-}*/
+
+//int main()
+//{
+//		printf("%d\n", isalnum('-'));
+//		printf("%d\n", ft_isalnum('-'));
+//	return (0);
+//}

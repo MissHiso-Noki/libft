@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:11:16 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 12:32:14 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:27:07 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,9 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-/*
-int main()
-{
-		printf("%d\n", isalpha('E'));
-		printf("%d\n", ft_isalpha('E'));
-	return (0);
-}*/
+//int main()
+//{
+//		printf("%d\n", isalpha('E'));
+//		printf("%d\n", ft_isalpha('E'));
+//	return (0);
+//}

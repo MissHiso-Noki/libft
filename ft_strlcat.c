@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:48:50 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/15 13:57:08 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:30:11 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (sizesrc + sizedest);
 }
 
-/*int main(void)
-{
-	char	dest[100] = "trucmuche";
-	char	src[100]= "help";
+//int main(void)
+//{
+//	char	dest[100] = "trucmuche";
+//	char	src[100]= "help";
 
-//	printf("f %ld\n", ft_strlcat(dest, src, 20));
-	printf("f %ld\n", strlcat(dest, src, 20));
-	printf("f %s\n", dest);
-}*/
+////	printf("f %ld\n", ft_strlcat(dest, src, 20));
+//	printf("f %ld\n", strlcat(dest, src, 20));
+//	printf("f %s\n", dest);
+//}

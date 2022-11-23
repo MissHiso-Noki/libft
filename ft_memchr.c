@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ccoste < ccoste@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 13:11:58 by ccoste            #+#    #+#             */
-/*   Updated: 2022/11/14 12:33:19 by ccoste           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:28:25 by ccoste           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,15 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-/*
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
 
-   ret = ft_memchr(str, ch, strlen(str));
+//int main () {
+//   const char str[] = "http://www.tutorialspoint.com";
+//   const char ch = '.';
+//   char *ret;
 
-   printf("String after |%c| is - |%s|\n", ch, ret);
+//   ret = ft_memchr(str, ch, strlen(str));
 
-   return(0);
-}*/
+//   printf("String after |%c| is - |%s|\n", ch, ret);
+
+//   return(0);
+//}
