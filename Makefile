@@ -6,7 +6,7 @@
 #    By: ccoste <ccoste@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 13:41:19 by ccoste            #+#    #+#              #
-#    Updated: 2022/11/23 18:37:05 by ccoste           ###   ########.fr        #
+#    Updated: 2022/11/24 11:40:33 by ccoste           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,11 +88,6 @@ fclean : clean
 
 re : fclean all
 
-
-# bonus: $(BONUSOBJ) $(NAME)
-# 		$(CC) $(CFLAGS) -c $(BONUS) libft.h
-# 		ar -rc libft.a $(BONUSOBJ)
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(SRC_BONUS)
-	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS_OBJ)
+# so:
+# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(SRC_BONUS)
+# 	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS_OBJ)
